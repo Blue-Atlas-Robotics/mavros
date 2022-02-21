@@ -35,7 +35,8 @@
 
 #include "diagnostic_updater/diagnostic_updater.hpp"
 #include "mavconn/interface.hpp"
-#include "/opt/ros/foxy/install/pluginlib/include/pluginlib/class_loader.hpp"
+//#include "/opt/ros/foxy/install/pluginlib/include/pluginlib/class_loader.hpp"
+#include "pluginlib/class_loader.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "GeographicLib/Geoid.hpp"
 #include "sensor_msgs/msg/imu.hpp"

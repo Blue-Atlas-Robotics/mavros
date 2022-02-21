@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 project(mavros)
 
+set(CMAKE_CXX_STANDARD 17)
+
 # Default to C++20
 if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 20)
