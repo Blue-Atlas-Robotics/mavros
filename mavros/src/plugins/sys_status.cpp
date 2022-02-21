@@ -488,6 +488,7 @@ public:
 
     auto state_qos = rclcpp::QoS(10).transient_local();
     auto sensor_qos = rclcpp::SensorDataQoS();
+    auto reliable_qos = rclcpp::QoS(10).reliable();
 
     state_pub = node->create_publisher<mavros_msgs::msg::State>(
       "state", state_qos);
@@ -496,7 +497,7 @@ public:
     estimator_status_pub = node->create_publisher<mavros_msgs::msg::EstimatorStatus>(
       "estimator_status", state_qos
     );
-    batt_pub = node->create_publisher<BatteryMsg>("battery", sensor_qos);
+    batt_pub = node->create_publisher<BatteryMsg>("battery", reliable_qos);
 
     statustext_pub = node->create_publisher<mavros_msgs::msg::StatusText>(
       "statustext/recv",
