@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 project(libmavconn)
 
+set(CMAKE_CXX_STANDARD 17)
+
 # Default to C11
 if(NOT CMAKE_C_STANDARD)
   set(CMAKE_C_STANDARD 11)
