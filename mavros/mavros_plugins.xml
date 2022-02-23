@@ -36,13 +36,13 @@ Send any command via COMMAND_LONG</description>
     <description>@brief Geofence manipulation plugin
 @plugin geofence</description>
   </class>
-  <class name="global_position" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::GlobalPositionPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
-    <description>@brief Global position plugin.
-@plugin global_position
+<!--  <class name="global_position" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::GlobalPositionPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">-->
+<!--    <description>@brief Global position plugin.-->
+<!--@plugin global_position-->
 
-Publishes global position. Conversion from GPS LLA to ECEF allows
-publishing local position to TF and PoseWithCovarianceStamped.</description>
-  </class>
+<!--Publishes global position. Conversion from GPS LLA to ECEF allows-->
+<!--publishing local position to TF and PoseWithCovarianceStamped.</description>-->
+<!--  </class>-->
   <class name="home_position" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::HomePositionPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief home position plugin.
 @plugin home_position
@@ -94,12 +94,12 @@ Send setpoint accelerations/forces to FCU controller.</description>
 
 Send setpoint attitude/orientation/thrust to FCU controller.</description>
   </class>
-  <class name="setpoint_position" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::SetpointPositionPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
-    <description>@brief Setpoint position plugin
-@plugin setpoint_position
+<!--  <class name="setpoint_position" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::SetpointPositionPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">-->
+<!--    <description>@brief Setpoint position plugin-->
+<!--@plugin setpoint_position-->
 
-Send setpoint positions to FCU controller.</description>
-  </class>
+<!--Send setpoint positions to FCU controller.</description>-->
+<!--  </class>-->
   <class name="setpoint_raw" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::std_plugins::SetpointRawPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief Setpoint RAW plugin
 @plugin setpoint_raw
