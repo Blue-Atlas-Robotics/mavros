@@ -72,11 +72,11 @@ int main(int argc, char * argv[])
     router_node->set_parameters(router_params);
   }
 
-  RCLCPP_INFO(node->get_logger(), "Starting mavros uas node");
-  auto uas_node = std::make_shared<mavros::uas::UAS>(
-    options, "mavros", uas_url, tgt_system,
-    tgt_component);
-  exec.add_node(uas_node);
+  // RCLCPP_INFO(node->get_logger(), "Starting mavros uas node");
+  // auto uas_node = std::make_shared<mavros::uas::UAS>(
+  //   options, "mavros", uas_url, tgt_system,
+  //   tgt_component);
+  // exec.add_node(uas_node);
 
   exec.spin();
   rclcpp::shutdown();
